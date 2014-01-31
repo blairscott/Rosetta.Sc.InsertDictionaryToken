@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<control xmlns:def="Definition" xmlns="http://schemas.sitecore.net/Visual-Studio-Intellisense">
+  <RichText.InsertDictionaryToken>
+    <FormDialog Icon="Network/32x32/link.png" Header="Insert a dictionary token" Text="Select the dictionary item to use" OKButton="Select">
+      <script type="text/javascript" src="/sitecore/shell/Controls/Rich Text Editor/InsertDictionaryToken/InsertDictionaryToken.js">.</script>
+      <CodeBeside Type="Rosetta.Sc.InsertDictionaryToken.Controls.InsertDictionaryToken, Rosetta.Sc.InsertDictionaryToken" />
+
+      <DataContext ID="InternalLinkDataContext"/>
+      <GridPanel Width="100%" Height="100%" GridPanel.VAlign="top" Style="table-layout:fixed">
+        <Scrollbox Width="100%" Height="100%" Background="white" Border="none" Padding="0">
+          <TreeviewEx ID="InternalLinkTreeview" DataContext="InternalLinkDataContext" Root="true" />
+        </Scrollbox>
+      </GridPanel>
+    </FormDialog>
+  </RichText.InsertDictionaryToken>
+</control>
